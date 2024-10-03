@@ -1,0 +1,57 @@
+/* Button styling */
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.complete-task-button, .edit-task-button, .delete-task-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Complete button */
+.complete-task-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.complete-task-button.completed {
+  background-color: #dc3545;
+}
+
+/* Edit button */
+.edit-task-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+/* Delete button */
+.delete-task-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Button hover effects */
+.complete-task-button:hover,
+.edit-task-button:hover,
+.delete-task-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.complete-task-button:hover {
+  background-color: #218838;
+}
+
+.edit-task-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-task-button:hover {
+  background-color: #c82333;
+}
